@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Flytavla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="desktopstyles.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <!-- HEADER -->
+        <div class="header-wrapper">
+            <!-- TITTEL OG KLOKKESLETT -->
+            <div class="title-wrapper">
+                <h1>Avganger</h1>
+                <h1 id="time-now"> </h1>
+            </div>
+            <!-- LABELS FOR HVER FLYINFO -->
+            <div class="table-labels-wrapper">
+                <div class="tid-wrapper">
+                    <p>Tid</p>
+                </div>
+                <div class="logo-wrapper">
+                </div>
+                <div class="id-wrapper">
+                    <p>Fly</p>
+                </div>
+                <div class="gate-wrapper">
+                    <p>Gate</p>
+                </div>
+                <div class="destinasjon-wrapper">
+                    <p>Destinasjon</p>
+                </div>
+                <div class="status-wrapper">
+                    <p>Status</p>
+                </div>
+            </div>
+        </div>
+        <!-- HER KOMMER HVER FLYRAD -->
+        <div id='fly'></div>
+
+        <!-- FLYPLASS SELECTOREN -->
+        <div class="flyplass-velger-wrapper">
+            <select id="flyplass-velger">
+                <option value="BGO" selected>Bergen Flesland</option>
+                <option value="OSL">Oslo Lufthavn</option>
+                <option value="TRD">Trondheim Lufthavn</option>
+                <option value="BOO">Bodø Lufthavn</option>
+                <option value="SVG">Stavanger Lufthavn</option>
+            </select>
+        </div>
+
+        <div class="footer">
+            <p>All flydata hentes fra <a href="https://www.avinor.no">Avinor</a></p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
